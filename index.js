@@ -13,6 +13,10 @@ app.use((req, res, next) => {
   next();
 });
 
+
+app.get('/', (req, res) => {
+  res.send('Hello from the root route!');
+});
 app.post("/bfhl", (req, res) => {
   const { data } = req.body;
  const email = "kashish1769.be22@chitkara.edu.in"; 
